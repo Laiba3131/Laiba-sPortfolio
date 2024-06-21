@@ -24,13 +24,26 @@
   font-weight: 900;
   margin-bottom: 33px;
   font-family: var(--font-roboto);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(255, 255, 255, 0) 120%
-  );
+  background: linear-gradient(90deg,
+      var(--color-primary) 0%,
+      var(--color-secondary) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .description {
@@ -48,56 +61,37 @@
   font-weight: 600;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.contactBtn:hover {
+  background-color: var(--color-secondary);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .heroImg {
   width: 50%;
   z-index: 1;
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 10px);
-  }
-  100% {
-    transform: translate(0, -0px);
-  }
-}
-
-.topBlur {
-  position: absolute;
-  width: 50vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 350px;
-  top: -128px;
-  left: -10vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
-
+.topBlur,
 .bottomBlur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
-  top: 246px;
-  right: -25vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
+  animation: rotateBlur 20s linear infinite;
+}
+
+@keyframes rotateBlur {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 830px) {
@@ -107,5 +101,15 @@
 
   .content {
     align-items: center;
+  }
+
+  .title {
+    font-size: 48px;
+    /* Smaller font size for mobile */
+  }
+
+  .description {
+    text-align: center;
+    /* Centered text for mobile */
   }
 }

@@ -1,67 +1,42 @@
 [
   {
-    "title": "TODO APP",
-    "imageSrc": "projects/project-img7.PNG",
+    "title": "Digi Skills",
+    "imageSrc": "projects/farming_e_app.PNG",
     "description": "This is a todo website for showing your working and Organize your work and life.",
-    "skills": ["Flutter", "Firebase", "Node", "MongoDB"],
+    "skills": ["Flutter", "Firebase","GetX","Clean Architecture"],
     "demo": "https://www.example.com",
-    "source": "https://github.com/nimra321/Mern-Portfolio"
+    "source": "https://github.com/Laiba3131/farming_e_board_app"
   },
     {
-      "title": "Medicine Inventory",
+      "title": "AutoReady Client portal",
       "imageSrc": "projects/project-img1.PNG",
       "description": "It's a medicine bying and selling e-commerce website where you can buy every type of medicines.",
-      "skills": ["React", "Express", "Node", "MongoDB"],
+      "skills": ["Flutter", "Firebase", "API's Integration","Provider","MVC"],
       "demo": "https://www.example.com",
       "source": "https://github.com/nimra321/medAdept"
     },
     {
-      "title": "Weather Application",
+      "title": "Legal Links",
       "imageSrc": "projects/project-img8.PNG",
       "description": " Stay informed about the weather conditions with this user-friendly application. ",
-      "skills": ["React", "HTML", "CSS"],
+      "skills": ["Flutter", "Firebase", "Provider", "GetX","Provider","MVVM"],
       "demo": "https://www.example.com",
       "source": "https://github.com/nimra321/medAdept"
     },
     {
-      "title": "Foodi",
+      "title": "United Proposals",
       "imageSrc": "projects/project-img4.PNG",
       "description": "It's a food website where you can place an order and admin can review the order.",
-      "skills": ["React", "Express", "Node", "MongoDB"],
+      "skills": ["Flutter", "Firebase", "Provider", "GetX","Provider","MVVM"],
       "demo": "https://www.example.com",
       "source": "https://github.com/nimra321/Foodi"
     },
     {
-      "title": "Art Gallery",
+      "title": "ProBuddy",
       "imageSrc": "projects/project-img2.PNG",
       "description": "It's a website where you can see amazing  works of art, such as paintings, and other visual artworks.",
-      "skills": ["React", "HTML", "CSS"],
+      "skills": ["Flutter", "Firebase", "Provider", "GetX","Provider","MVVM"],
       "demo": "https://www.example.com",
       "source": "https://github.com/nimra321/ArtTreasure"
-    },
-    {
-      "title": "AI GPT",
-      "imageSrc": "projects/project-img3.PNG",
-      "description": "This is a project it is made as the clone of Chat GPT with differnt User Interface.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    
-    {
-      "title": "Wha Chat",
-      "imageSrc": "projects/project-img5.PNG",
-      "description": "In this chatbot based whatsapp clone where you can easily chat with others.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    {
-      "title": "Personal Website",
-      "imageSrc": "projects/project-img6.PNG",
-      "description": "This is a personal website for showing your working, showing your skills and experience to others.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://github.com/nimra321/Mern-Portfolio"
     }
   ]
